@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://use.fontawesome.com/09dd1d730f.js"></script>
+    <title>LaCon's Pharmacy</title>
+     <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+<div class="background-image" id="home">
+<header>
+    <div class="container">
+        <h1 class="logo"><a href="#home" style="text-decoration : none; color : #00E8FF;">LaCon's Pharmacy</a></h1>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <a href="#left" class="navitem">Business Hours</a>
+            <a href="#right" class="navitem">Contact Us</a>
+            <a href="#googlemap" class="navitem">Location</a>
+            <a href="#aboutus" class="navitem">About Us</a>
+        </nav>
+    </div>
+</header>
+
+
+    <h2>Proudly serving<br><span style='color: #EEFF00;'>Norristown</span><br>for over 30 years.</h2>
+    <div class="subheader">
+        <h3>See what we have to offer</h3>
+        <a href="#store_info"><img src="images/triangle.svg" alt="triangle"></a>
+    </div>
+</div>
+
+<div class="storeinfo" id="store_info">
+    <div class="products">
+        <img src="images/pillbottle.svg" alt="pill bottle">
+        <p><span class="iconheaders">Products</span></p>
+        <p><span class="icondetails">Extensive line of products including vitamins, medical supplies, and more.</span></p>
+    </div>
+    <div class="payment">
+        <img src="images/prescription.svg" alt="prescription">
+        <p><span class="iconheaders">Payment</span></p>
+        <p><span class="icondetails">We accept all insurance plans.</span></p>
+    </div>
+    <div class="service">
+        <img src="images/smiley.svg" alt="smiley face">
+        <p><span class="iconheaders">Service</span></p>
+        <p><span class="icondetails">Friendly and personal service.</span></p>
+    </div>
+    <div class="vaccines">
+        <img src="images/vaccine.svg" alt="vaccine">
+        <p><span class="iconheaders">Vaccines</span></p>
+        <p><span class="icondetails">Get your flu and shingles vaccine from one of our friendly pharmacists.</span></p>
+    </div>
+
+</div>
+
+<section id="two_column" class="clearfix">
+ <aside id="left">
+        <p><span class="business">Business Hours</span><p>
+        <p><span class="info">Monday - Thursday:</span> <span class="hours">9 am - 7 pm</span></p>
+        <p><span class="info">Friday:</span> <span class="hours">9 am - 5:30 pm</span></p>
+        <p><span class="info">Saturday:</span> <span class="hours">10 am - 1 pm</span></p>
+        <p><span class="info">Sunday:</span> <span class="hours">Closed</span></p>
+    </aside>
+    <article id="right">
+        <p><span class="contact">Contact Us</span></p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="contactinfo"><a href="https://goo.gl/maps/SeDoNvwRM7K2" target="_blank">1336 Powell St, Norristown, PA, 19401</a></span></p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i><span class="contactinfo">(610) 279-0140</span></p>
+        <p><i class="fa fa-fax" aria-hidden="true"></i><span class="contactinfo">Fax: (610) 279-5767</span></p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i><span class="contactinfo"><a href="mailto:laconspharmacy@gmail.com">laconspharmacy@gmail.com</a></span></p>
+    </article>
+</section>
+
+<p><span class="location" id="googlemap">Location</span></p>
+    <div class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d12203.251042780947!2d-75.33581!3d40.124176!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6bd8b7b1aa739%3A0x252c73196b57664c!2sLaCon&#39;s+Pharmacy%2C+1336+Powell+St%2C+Norristown%2C+PA+19401!3m2!1d40.124176!2d-75.33581!5e0!3m2!1sen!2sus!4v1502733129000" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+<div id="aboutus">
+    <p><span class="about_us">About Us</span></p>
+    <img class="retro-pic" src="images/lacons_pharmacy_pic.jpg" alt="retro pharmacy pic">
+    <small class="history">LaCon's Pharmacy is a family owned, independent pharmacy in beautiful Norristown, Pennsylvania. We will fill your prescriptions promptly and bill your health insurance company.<br><br>Our other services include copying/faxing, money orders, the Pennsylvania Lottery, and pre-paid phone cards. We sell a full line of Wind Mill vitamins as well as medical supplies, blood pressure monitors and diabetic needs. You will also find cosmetics, cards, gifts, snacks, ethnic hair, and health & beauty needs.<br><br>We can give you the information you need, and we will do the best we can.</small>
+</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+    $(".burger").on("click",function(){
+        $("nav").slideToggle();
+    });
+</script>
+
+<script>
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - (60)
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+
+</body>
+
+
+</html>

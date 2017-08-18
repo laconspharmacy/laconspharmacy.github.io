@@ -1,0 +1,449 @@
+@font-face {
+  font-family: 'Aerokids';
+  src: url('../fonts/Aerokids.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'odudo-semibold';
+  src: url('../fonts/odudo-semi-bold.eot');
+  src: url('../fonts/odudo-semi-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/odudo-semi-bold.woff2') format('woff2'),
+       url('../fonts/odudo-semi-bold.woff') format('woff'),
+       url('../fonts/odudo-semi-bold.ttf') format('truetype'),
+       url('../fonts/odudo-semi-bold.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html { 
+  /* to avoid the text clipping into the sides of the screen */
+  margin: 1px;  
+  background-color: #FAFAFA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1120px;
+    padding-left: 50px;
+
+}
+
+header {
+  padding: 10px 0px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  padding-right: 30px;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Aerokids';
+    font-weight: normal;
+    color: #00E8FF;
+    font-size: 2.5em;
+    float: left;
+    width: 30%;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.navitem {
+    display: inline-block;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.075em;
+    position: relative;
+}
+
+.navitem:last-child {
+    padding-right: 0;
+}
+
+h2 {
+    font-family: Odudo-SemiBold;
+    color: white;
+    font-size: 5em;
+    padding: 100px 0px 0px 50px;
+}
+
+.background-image {
+  background-image: url("../images/lacons_pharmacy_storefront.png");
+  height: auto;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #999A9A;
+}
+
+h3 {
+    font-family: Odudo-SemiBold;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 80px 0 10px 0;
+}
+
+.subheader {
+    text-align: justify;
+    width: 100%;
+}
+
+.subheader img {
+    display: block;
+    margin: 0 auto 18px;
+}
+
+p  {
+  font-family: Arial;
+  color: black; 
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.storeinfo {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  padding: 80px;
+}
+
+.storeinfo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.iconheaders {
+  font-family: Odudo-SemiBold;
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
+}
+
+.icondetails {
+  font-family: arial;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+.products {
+  text-align: center;
+  padding: 0px 20px;
+  width: 25%;
+}
+
+.payment {
+  text-align: center;
+  padding: 0px 20px;
+  width: 25%;
+}
+
+.service {
+  text-align: center;
+  padding: 0px 20px;
+  width: 25%;
+}
+
+.vaccines {
+  text-align: center;
+  padding: 0px 20px;
+  width: 25%;
+}
+
+#two_column {
+    
+}
+
+#left {
+    background-color: #3C3C3C;
+    padding: 40px;
+    float: left;
+    width: 47%;
+}
+
+#right {
+    padding: 40px;
+    float: right;
+    width: 53%;
+    background-color: #EBEBEB;
+}
+
+span.contact {
+    font-family: Odudo-SemiBold;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+span.contactinfo {
+    line-height: 40px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+span.business {
+    font-family: Odudo-SemiBold;
+    font-weight: normal;
+    color: #00E8FF;
+    font-size: 28px;
+}
+
+span.hours {
+    color: #FFF;
+    line-height: 40px;
+}
+
+span.info {
+    color: #EEFF00;
+    font-weight: bold;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+span.location {
+    font-family: Odudo-SemiBold;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: center;
+    margin:auto; 
+    display:table;
+    padding: 30px 0px 20px 0px;
+}
+
+.maps {
+    width: 100%;
+    max-width: 800px;
+    max-height: 450px;
+    height: 56.25vw;
+    margin: 0 auto 60px auto;
+    position: relative;
+    padding: 0 10px;
+}
+
+.maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0 10px;
+
+}
+
+span.about_us {
+    font-family: Odudo-SemiBold;
+    font-weight: normal;
+    font-size: 28px;
+    color: #00E8FF;
+    text-align: center;
+    margin:auto; 
+    display:table;
+    padding: 30px 0 20px;
+}
+
+#aboutus {
+    background-color: #3C3C3C;
+    text-align:center;
+    width:100%;
+    display:block;
+    margin:auto;
+    padding-bottom: 50px;
+
+}
+
+.retro-pic {
+  height: auto;
+  max-width: 100%;
+  padding: 0 10px 20px;
+}
+
+.history {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    font-family: georgia;
+    font-size: 16px;
+    color: #fff;
+}
+
+body {
+
+}
+
+footer {
+
+}
+
+.burger {
+  display: none;
+  float: right;
+  width: 60px;
+}
+
+.burger span {
+  float: left;
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 987px) {
+  
+    .navitem {
+      display: block;
+      padding: 10px;
+      color: white;
+    }
+    nav {
+      float: left;
+      width: 100%;
+      display: none;
+    }
+
+    h2 {
+      padding: 130px 0px 0px 30px;
+    }
+
+    .container {
+      padding-left: 25px;
+    }
+
+    .burger {
+      display: inline-block;
+    }
+
+    .storeinfo {
+      padding: 25px;
+    }
+
+    .products, .payment {
+      width: 48%;
+      display: inline-block;
+      vertical-align: text-top;
+      padding: 20px;
+    }
+
+    .service, .vaccines {
+      width: 48%;
+      display: inline-block;
+      vertical-align: text-top;
+      padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 784px) {
+     #left, #right {
+      width: 100%;
+      padding: 20px;
+    }
+    h2 {
+      padding: 130px 0px 0px 30px;
+    }
+
+    
+    span.location {
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    }
+
+@media screen and (max-width: 674px) {
+    h3 {
+      padding: 50px 0 10px 0;
+    }
+    
+}
+
+@media screen and (max-width: 594px) {
+
+    .storeinfo {
+      padding: 0px;
+    }
+
+    .products {
+      width: 100%;
+    }
+
+    .payment {
+      width: 100%;
+    }
+
+    .service {
+      width: 100%;
+    }
+
+    .vaccines {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 4em;
+      padding: 130px 0px 0px 20px;
+    }
+
+    h3 {
+      padding: 50px 0 10px 0;
+    }
+
+    .history {
+      padding: 0 10px;
+    }
+
+    
+}
+
