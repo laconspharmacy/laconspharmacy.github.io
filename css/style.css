@@ -48,7 +48,6 @@ header {
   z-index: 2;
   top: 0;
   width: 100%;
-  padding-right: 30px;
 }
 
 header::after {
@@ -71,6 +70,25 @@ header::after {
     vertical-align: middle;
     margin: 0 auto;
 }
+
+.alert-banner {
+  width: 100%;
+  margin: auto;
+}
+
+.alert-banner-text {
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  /* padding-top: 30px; */
+  color: #F95A55;
+  font-weight: bold;
+}
+
+.alert-banner-text:visited {color:#00FF00;}
+
+a { color: inherit; } 
 
 nav {
     float: right;
@@ -401,6 +419,7 @@ footer {
     margin: 0;
     padding: 20px;
     }
+}
 
 @media screen and (max-width: 674px) {
     h3 {
